@@ -1,0 +1,13 @@
+https://www.jianshu.com/p/d03efd263fe2
+
+https://blog.csdn.net/Tommy_wxie/article/details/38779667
+
+https://blog.csdn.net/nextyu/article/details/72922012
+
+https://blog.csdn.net/nextyu/article/details/72922012
+
+获取gitosis
+git clone https://github.com/res0nat0r/gitosis.git
+
+python setup.py install
+

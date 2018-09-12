@@ -50,3 +50,41 @@ Include=/usr/local/zabbix/etc/zabbix_agentd.conf.d/
 
 #cat mongodb_stats.conf
 UserParameter=mongodb_stats[*],/usr/local/zabbix/etc/scripts/check_mongodb.sh $1 $2 $3
+
+监控副本集
+https://www.linuxidc.com/Linux/2017-05/144023.htm
+#!/usr/bin/python 
+#coding:utf-8 
+  
+import pymongo 
+from pymongo import MongoClient 
+  
+class check_mongo_repl(): 
+    def __init__(self): 
+        self.conn = pymongo.MongoClient('mongodb://admin:Admin123@192.168.18.195:27018/') 
+        self.db = self.conn.admin 
+        self.rs = self.db.command('replSetGetStatus') 
+  
+    def get_rs_num(self): 
+        list = "Value : %s" %  self.rs.values() 
+        get_list = list.split(',') 
+        a = 0
+        if " u'stateStr': u'PRIMARY'" in get_list: 
+            a = 1
+        if " u'stateStr': u'SECONDARY'" in get_list: 
+            a += 1
+        if " u'stateStr': u'ARBITER'" in get_list: 
+            a += 1
+        return a 
+  
+  
+if __name__ == "__main__": 
+    mongo = check_mongo_repl() 
+    print mongo.get_rs_num()
+说明：若 mongodb 副本集三个节点分别含有 PRIMARY、SECONDARY、ARBITER 说明副本集正常，返回值为3
+
+
+
+4、在 zabbix_agentd.win.conf 配置文件中加入
+
+UserParameter=mongodb.repl.set,python "C:\Program Files\zabbix_agents_3.0.0.win\mongodb-monitor.py"

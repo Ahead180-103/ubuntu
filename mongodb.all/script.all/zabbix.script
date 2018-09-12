@@ -1,0 +1,52 @@
+http://blog.51cto.com/hnr520/1852833
+
+
+
+#cat check_mongodb.sh#cat  
+#!/bin/bash
+#
+# mongodb status
+# db.serverStatus().ok
+# memory status
+# Physical memory: db.serverStatus().mem.resident
+# Virtual memory: db.serverStatus().mem.virtual
+# opcounters status
+# insert: db.serverStatus().opcounters.insert
+# query: db.serverStatus().opcounters.query
+# update: db.serverStatus().opcounters.update
+# delete: db.serverStatus().opcounters.delete
+# connections status
+# current connections: db.serverStatus().connections.current
+MONGODBPATH="/usr/local/mongodb3.2.1/bin/mongo"
+HOST="127.0.0.1"
+PORT="$1"
+MONGODB_PA="$MONGODBPATH ${HOST}:${PORT}"
+ 
+if [ $# == 3 ];then
+  result=$(/bin/echo "db.serverStatus().$2.$3" | $MONGODBPATH ${HOST}:${PORT} --quiet)
+  echo $result
+elif [ $# == 2 ];then
+  result=$(/bin/echo "db.serverStatus().$2" | $MONGODBPATH ${HOST}:${PORT} --quiet)
+  echo $result
+else
+  echo "Usage:$0 PORT mem resident"
+fi
+2.脚本使用
+
+存放位置：/usr/local/zabbix/etc/scripts
+
+功能：
+
+(1).脚本能接受三个参数传入，监控mongodb内存使用情况、客户端连接数、dml操作语句情况等
+
+(2).脚本能接受二个参数传入，监控mongodb是否在线
+
+二、修改agent配置文件
+
+1.修改zabbix_agentd.conf
+
+Include=/usr/local/zabbix/etc/zabbix_agentd.conf.d/
+2.在zabbix_agentd.conf.d下定义监控mongodb的key
+
+#cat mongodb_stats.conf
+UserParameter=mongodb_stats[*],/usr/local/zabbix/etc/scripts/check_mongodb.sh $1 $2 $3

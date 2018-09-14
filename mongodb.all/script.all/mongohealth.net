@@ -1,0 +1,1 @@
+UserParameter=mgfbhealth.net,echo "rs.status()" | mongo -uroot -p1 admin --quiet  | egrep "\bhealth\b" | grep 1 | wc -l

@@ -8,14 +8,14 @@ import sys
 import os
  
 headers = {'Content-Type': 'application/json;charset=utf-8'}
-api_url = "https://oapi.dingtalk.com/robot/send?access_token=1b9073964e93d0c8cd601084a6fbdb37c810dbe97f1e36cf2cdb1b00a23e0790"
+api_url = "https://oapi.dingtalk.com/robot/send?access_token=******"
  
 def msg(text):
     json_text= {
      "msgtype": "text",
         "at": {
             "atMobiles": [
-                "17724699576"
+                "177******76"
             ],
             "isAtAll": False
         },

@@ -113,7 +113,7 @@ ubuntu:/home/git$ ssh-keygen -t rsa
 这里会提示输入密码，我们不输入直接回车即可。
 
 然后用刚生成公钥id_rsa.pub来对gitosis进行初始化。
-
+gitosis-init < id_rsa.pub
 
 
 

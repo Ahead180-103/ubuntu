@@ -1,0 +1,147 @@
+http://blog.51cto.com/wzlinux/1978792
+
+http://blog.51cto.com/m51cto/2051945
+
+python之钉钉机器人zabbix报警
+喵来个鱼13人评论7634人阅读2017-12-19 00:32:49
+首先在钉钉群聊里添加一个自定义的机器人
+
+image.png
+
+并复制webhook的内容
+
+https://oapi.dingtalk.com/robot/send?access_token=37e23308d1b84eb4ac34566e03c4c4e74b7eedecbcc002exxxxxxxxxxxxxxx
+
+
+
+创建脚本
+
+可以直接克隆我的git
+
+
+
+git clone https://github.com/donxan/zabbix.git
+
+
+在zabbix服务端的alertscripts目录下新建一个python脚本，内容：
+
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# Author: aiker@gdedu.ml
+# My blog http://m51cto.51cto.blog.com 
+import requests
+import json
+import sys
+import os
+ 
+headers = {'Content-Type': 'application/json;charset=utf-8'}
+api_url = "https://oapi.dingtalk.com/robot/send?access_token=37e23308d1b84eb4ac34566e03c4c4e74bxxxxxxxxxxxxxx"
+ 
+def msg(text):
+    json_text= {
+     "msgtype": "text",
+        "at": {
+            "atMobiles": [
+                "13xxxxxxx80"
+            ],
+            "isAtAll": False
+        },
+        "text": {
+            "content": text
+        }
+    }
+    print requests.post(api_url,json.dumps(json_text),headers=headers).content
+     
+if __name__ == '__main__':
+    text = sys.argv[1]
+    msg(text)
+保存并设置权限；
+
+chmod +x dingdingrobot.py
+python使用的是python2
+
+
+
+手动调试脚本：
+
+python dingdingrobot.py 123
+image.png
+
+或者
+
+
+
+./dingdingrobot.py 123
+image.png
+
+创建报警媒介
+
+
+
+image.png
+
+绑定到用户
+
+image.png
+
+创建动作
+
+image.png
+
+image.png
+
+image.png
+
+内容如下：
+
+服务器:{HOST.NAME}发生: {TRIGGER.NAME}故障!
+{
+告警主机:{HOST.NAME}
+告警地址:{HOST.IP}
+监控项目:{ITEM.NAME}
+监控取值:{ITEM.LASTVALUE}
+告警等级:{TRIGGER.SEVERITY}
+当前状态:{TRIGGER.STATUS}
+告警信息:{TRIGGER.NAME}
+告警时间:{EVENT.DATE} {EVENT.TIME}
+事件ID:{EVENT.ID}
+}
+  
+
+服务器:{HOST.NAME}: {TRIGGER.NAME}已恢复!
+{
+告警主机:{HOST.NAME}
+告警地址:{HOST.IP}
+监控项目:{ITEM.NAME}
+监控取值:{ITEM.LASTVALUE}
+告警等级:{TRIGGER.SEVERITY}
+当前状态:{TRIGGER.STATUS}
+告警信息:{TRIGGER.NAME}
+告警时间:{EVENT.DATE} {EVENT.TIME}
+恢复时间:{EVENT.RECOVERY.DATE} {EVENT.RECOVERY.TIME}
+持续时间:{EVENT.AGE}
+事件ID:{EVENT.ID}
+}
+  
+
+服务器:{HOST.NAME}: 报警确认
+{
+确认人:{USER.FULLNAME} 
+时间:{ACK.DATE} {ACK.TIME} 
+确认信息如下:
+"{ACK.MESSAGE}"
+问题服务器IP:{HOSTNAME1}
+问题ID:{EVENT.ID}
+当前的问题是: {TRIGGER.NAME}
+}
+依次对恢复和确认操作设置
+
+image.png
+
+image.png
+
+钉钉收到消息：
+
+image.png
+
+image.png

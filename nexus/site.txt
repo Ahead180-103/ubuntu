@@ -1,0 +1,7 @@
+nexus下载地址
+
+wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+
+https://help.sonatype.com/repomanager3/download
+
+https://www.sonatype.com/download-oss-sonatype

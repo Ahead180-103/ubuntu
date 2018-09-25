@@ -1,0 +1,12 @@
+#!/bin/bash
+while :
+do
+sleep  30
+net_connection_total=`ss -atn | wc -l`
+if [ $net_connection_total -gt 3000 ] ;then
+  killall unicorn.linux
+  sleep 10
+  cd /mnt/go_server/unicorn9000
+  nohup ./unicorn.linux &
+fi
+done 

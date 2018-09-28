@@ -1,0 +1,3 @@
+#UserParameter=mongod_status,/opt/zabbixshell/mongod_cluster_status.sh
+UserParameter=mongod_status,echo "rs.status()" | /mnt/mongodb/bin/mongo  -uzabbix -p1 admin --quiet | awk -F[:,] '/health/{if($2>0)print $2}' | wc -l
+UserParameter=mongod_vaping_status[*],/opt/zabbixshell/mongod_vaping_status.sh $1

@@ -13,3 +13,10 @@ print("***")
 
 for i in range(5):
    print("i =",i)
+
+for letter in "python":
+   print("当前字母 :",letter)
+
+for fruits in ['banana','apple','mongo']:
+   print("当前水果 :",fruits)
+

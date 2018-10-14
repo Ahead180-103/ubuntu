@@ -4,14 +4,14 @@
 True and True     #是Ture
 True and False    #是False
 False and True    #是False
-False and False  #是False
+False and False   #是False
 '''
 
 '''
 True or True     #是Ture
 True or False    #是Ture
 False or True    #是Ture
-False or False  #是False
+False or False   #是False
 '''
 
 s=input("请输成绩: ") or '0'

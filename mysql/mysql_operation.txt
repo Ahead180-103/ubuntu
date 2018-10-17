@@ -18,7 +18,7 @@ grant usage on *.* to monitor@'localhost' identified by 'monitor';
 flush privileges;
 
 cd /usr/local/zabbix
-vim .my.cfg
+vim .my.cnf
 [mysql]
 host=localhost
 user=monitor

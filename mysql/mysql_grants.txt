@@ -1,0 +1,25 @@
+https://www.cnblogs.com/crxis/p/7044582.html
+
+查看授权
+show grants for user@"host";
+
+授权
+只能对哪个库那个表中的哪几个字段有select权限
+grant select(user_id,username) on 库名.表名 to user@"host" indentified by "password";
+
+只能对哪个库那个表中有select,update,delete,insert权限
+grant select,update,delete,insert on 库名.表名 to user@"host" indentified by "password";
+
+对所有库所有表有所有权限  相当于root的权限
+grant all on *.* to user@"host" indentified by "password";
+
+撤销权限
+撤销已经赋予给mysql用户的所有权限
+revoke all on *.* from user@"host";
+
+撤销已经赋予给mysql用户的部分权限(如撤销用户的delete权限)
+revoke delete  on 库名.表名 from user@"host";
+
+刷新权限
+flush privileges;
+

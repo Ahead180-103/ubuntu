@@ -1,0 +1,27 @@
+ord(x)
+chr(i)
+hex(i)
+oct(i)
+bin(i)
+
+
+del()
+abs()
+round()
+int()
+float()
+
+
+\n
+\r
+\t
+\v
+\xXX
+\uXXXXX
+\0oo
+
+
++ - * / // %  
+
++ += * *=
+

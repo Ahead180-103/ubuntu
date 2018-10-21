@@ -1,0 +1,12 @@
+按时间导出数据
+ISODate("1970-01-01T00:00:00.000Z").valueOf()
+ISODate("2018-10-23T00:00:00.000Z").valueOf()
+ISODate("2018-10-21").valueOf()
+
+
+/mnt/mongodb/bin/mongoexport  --port 27018 -uroot -p1 --authenticationDatabase=admin -d gyy -c table -q '{DT:{$gte:ISODate(1540080000000),$lt:ISODate(1540166400000)}}' --type=json -o /root/abc.json
+
+导入数据
+/mnt/mongodb/bin/mongoimport  --port 27018 -uroot -p1 --authenticationDatabase=admin -d gyy -c talbe  --type=json  /root/abc.json
+
+

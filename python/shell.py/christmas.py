@@ -11,7 +11,9 @@
   ×
 '''
 
+
 h=int(input('请输入: '))
+#方法一
 s=0
 a=1
 while s < 2 :
@@ -27,3 +29,10 @@ while s < 2 :
       line1=' ' * (h-1) + '*'
       print(line1)
 print('程序结束')
+
+
+#方法二
+for i in range(1,h+1):
+   print(' '*(h-i)+'*'*(2*i-1))
+for i in range(1,h+1):
+   print(' '*(h-1)+'*')

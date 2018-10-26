@@ -1,4 +1,9 @@
 *nat
 -A PREROUTING  -p tcp --dport 80 -j REDIRECT --to-port 8080
-#-A PREROUTING  -p tcp --dport 80 -j DNAT --to-destination 127.0.0.1:8080
+-A PREROUTING  -p tcp --dport 80 -j DNAT --to-destination 127.0.0.1:8080
+COMMIT
+*filter
+-A INPUT  -s 2.2.2.2 -p tcp --dport 27017 -j ACCEPT
+-A INPUT  -s 1.1.1.1 -p tcp --dport 27017 -j ACCEPT 
+-A INPUT  -p tcp --dport 27017 -j DROP
 COMMIT

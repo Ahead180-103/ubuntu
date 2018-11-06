@@ -1,0 +1,109 @@
+ipset与iptable
+· iptables是在Linux内核中配置防火墙规则的用户空间工具。在内核版本更新到2.4以来，iptable一直作为系统中主要的防火墙解决方案。CentOS7将原来的iptable替换为firewall，而firewall提供了对ipset的支持。 
+· ipset相当于iptable的扩展，它和iptable 处理方式，iptable通过链表线性存储然后遍历来实现匹配。而ipset通过通过索引的数据结构设计达到快速匹配。这种设计使得当set配置比较庞大的时候，也可以高效地进行匹配。
+
+适用范围
+· 存储多个IP地址或端口号，并在一个swoop中与iptables的集合相匹配; 
+· 在不影响性能的同时，针对IP地址或端口的变化动态更新iptables规则; 
+· 性能高，用一个iptables规则来表示复杂的IP地址和端口
+
+安装
+在CentOS7更新firewalld到最新版本，即可使用ipset，更新安装命令：
+1
+yum install firewalld
+1
+二、ipset使用
+利用firewall-cmd对ipset进行操作
+ipset的存储路径：/etc/firewalld/ipsets
+
+命令集合：
+
+获取指定ipset信息
+
+firewall-cmd --info-ipset=[ipset_name]
+1
+增加ipset
+
+firewall-cmd --permanent --new-ipset=[ipset_name] --type=[type] --option
+1
+其中option可不填，eg：–option=family=inet6指定该ipset使用IPV6地址。
+
+删除指定ipset
+
+firewall-cmd --permanent --delete-ipset=[ipset_name]
+1
+删除后，在ipset目录下会有一个备份文件，例如：原来的ipset为test_set.xml，则删除后会生成一个test_set.xml.old.
+
+指定ipset中增加entry
+
+firewall-cmd --permanent --ipset=[ipset_name] --add-entry=[xx.xx.xx.xx]
+1
+指定ipset中删除entry
+
+firewall-cmd --permanent --ipset=[ipset_name] --remove-entry=[xx.xx.xx.xx]
+1
+删除entry 
+–permanent参数直接决定是否永久生效 需要执行firewall-cmd –reload，使其生效 
+不加–permanent是直接生效（runtime environment），不会保存在相应的ipset的XML文件中，重启firewalld服务将会失效
+
+IPSet Options 
+–get-ipset-types Print the supported ipset types 
+–new-ipset=<ipset> –type=<ipset type> [–option=<key>[=<value>]].. 
+Add a new ipset [P only] 
+–new-ipset-from-file=<filename> [–name=<ipset>] 
+Add a new ipset from file with optional name [P only] 
+–delete-ipset=<ipset> 
+Delete an existing ipset [P only] 
+–load-ipset-defaults=<ipset> 
+Load ipset default settings [P only] 
+–info-ipset=<ipset> Print information about an ipset 
+–path-ipset=<ipset> Print file path of an ipset [P only] 
+–get-ipsets Print predefined ipsets 
+–ipset=<ipset> –set-description=<description> 
+Set new description to ipset [P only] 
+–ipset=<ipset> –get-description 
+Print description for ipset [P only] 
+–ipset=<ipset> –set-short=<description> 
+Set new short description to ipset [P only] 
+–ipset=<ipset> –get-short 
+Print short description for ipset [P only] 
+–ipset=<ipset> –add-entry=<entry> 
+Add a new entry to an ipset [P] 
+–ipset=<ipset> –remove-entry=<entry> 
+Remove an entry from an ipset [P] 
+–ipset=<ipset> –query-entry=<entry> 
+Return whether ipset has an entry [P] 
+–ipset=<ipset> –get-entries 
+List entries of an ipset [P] 
+–ipset=<ipset> –add-entries-from-file=<entry> 
+Add a new entries to an ipset [P] 
+–ipset=<ipset> –remove-entries-from-file=<entry> 
+Remove entries from an ipset [P]
+
+三、ipset类型的区别
+1、hash:ip
+
+2、 hash:ip,mark
+
+3、hash:ip,port
+
+4、hash:ip,port,ip
+
+5、hash:ip,port,net
+
+6、 hash:mac
+
+7、hash:net
+
+8、hash:net,iface
+
+9、hash:net,net
+
+10、hash:net,port
+
+11、hash:net,port,net
+--------------------- 
+作者：快乐一坨屎 
+来源：CSDN 
+原文：https://blog.csdn.net/github_36904248/article/details/82012579 
+版权声明：本文为博主原创文章，转载请附上博文链接！

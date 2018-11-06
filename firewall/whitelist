@@ -1,0 +1,28 @@
+1.	设置白名单
+备注：提前写好白名单IP文档，便于直接导入firewall
+[root@localhost ~]# cat /opt/dfcp_whitelist
+103.232.87.0/24
+103.35.118.19
+192.168.100.0/24
+[root@localhost ~]# firewall-cmd --permanent --new-ipset=hgcp_whitelist --type=hash:ip
+[root@localhost ~]# firewall-cmd --reload 
+[root@localhost ~]# firewall-cmd --ipset=hgcp_whitelist  --add-entries-from-file=/opt/dfcp_whitelist
+2.	rsync的873端口对特定的机器开放
+[root@localhost ~]#firewall-cmd --add-rich-rule='rule family="ipv4" source ipset="hgcp_whitelist" port port="873" protocol="tcp" accept' --permanent  
+3.对ssh进行白名单访问限制
+[root@localhost ~]#firewall-cmd --add-rich-rule='rule family="ipv4" source ipset="hgcp_whitelist" port port="22" protocol="tcp" accept' --permanent
+4.设置端口转发
+[root@localhost ~]#firewall-cmd --add-forward-port=port=80:proto=tcp:toport=8000 --permanent  
+[root@localhost ~]#firewall-cmd --add-forward-port=port=443:proto=tcp:toport=1443 --permanent 
+5.web端口（80）对白名单单位时间不限制连接数，其他IP每秒限制2次
+[root@localhost ~]#firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source ipset="hgcp_whitelist" port port="80" protocol="tcp" accept'
+[root@localhost ~]#firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="0.0.0.0/0" port port="80" protocol="tcp" accept limit value="2/s"'
+6.数据库和redis端口只对白名单开启
+[root@localhost ~]#firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source ipset="hgcp_whitelist" port port="16303" protocol="tcp" accept' 
+[root@localhost ~]#firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source ipset="hgcp_whitelist" port port="17693" protocol="tcp" accept'
+7.重启firewall
+[root@localhost ~]# firewall-cmd --reload 
+
+备注：
+做完以后要特别注意用firewall-cmd --list-all 检查下是否配置成功，rich rules必须顺序要对
+

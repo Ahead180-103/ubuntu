@@ -11,7 +11,7 @@ echo ""
 echo ""
 sleep 1
 
-de /opt/gitlab/myubuntu/python/shell.py/
+cd /opt/gitlab/myubuntu/python/shell.py/
 git add . 
 git commit  -m "add"
 git push

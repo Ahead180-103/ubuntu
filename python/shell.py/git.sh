@@ -1,11 +1,17 @@
-#!/bin/sh
+#!/bin/bash
+
 cd /opt/github/ubuntu/python/shell.py/
 git add .
-git commit -m "add"
+git commit  -m "add"
 git push
 
-cd /opt/gitlab/myubuntu/python/shell.py/
-git add .
-git commit -m "add"
-git push
+echo ""
+echo ""
+echo ""
+echo ""
+sleep 1
 
+de /opt/gitlab/myubuntu/python/shell.py/
+git add . 
+git commit  -m "add"
+git push

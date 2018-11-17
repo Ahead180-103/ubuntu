@@ -1,0 +1,12 @@
+linux修改网卡名为eth0 
+
+1.编辑网卡的配置文件 vi /etc/sysconfig/network-scripts/ifcfg-ens33 将里面的NAME和DEVICE项修改为eth0，ONBOOT修改为yes。
+2.重命名网卡配置文件ifcfg-ens33为ifcfg-eth0。
+cd /etc/sysconfig/network-scripts/
+mv ifcfg-ens33 ifcfg-eth0
+3.编辑/etc/default/grub并加入“net.ifnames=0 biosdevname=0 ”到GRUB_CMDLINE_LINUX变量中。
+vi /etc/default/grub
+GRUB_CMDLINE_LINUX=“crashkernel=auto rd.lvm.lv=rhel/root rd.lvm.lv=rhel/swap net.ifnames=0 biosdevname=0 rhgb quiet”
+4.运行命令grub2-mkconfig -o /boot/grub2/grub.cfg来重新生成GRUB配置并更新内核参数。
+5.reboot。
+6.输入ifconfig确认

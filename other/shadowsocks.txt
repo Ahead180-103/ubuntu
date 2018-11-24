@@ -1,0 +1,55 @@
+ss多用户搭建教程 shadowsocks多用户版
+ 
+
+系统：如无特殊说明，所有教程全部为linux centos6
+
+使用xshell 或者 putty 连上系统后
+
+一行一回车执行下面代码
+
+yum update     /系统包更新/
+
+yum install python-setuptools && easy_install pip   /安装py服务 和 pip服务/
+
+pip install shadowsocks    /安装ss服务/
+
+准备好上面工作后
+
+用代码创建多个ss帐号
+
+touch /etc/shadowsocks.json  /创建一个文件，类似txt文本/
+vi /etc/shadowsocks.json /编辑文件/
+下面代码用鼠标右键复制到linux控制台 /向文件写入帐号信息，我设置了3个帐号/
+server里面需要设置为自己vps的ip地址
+{
+ "server":"11.32.15.21",
+ "local_address":"127.0.0.1",
+ "local_port":1080,
+ "port_password":{
+ "9001":"10001",
+ "9002":"10002",
+ "9003":"10003"
+ },
+ "timeout":300,
+ "method":"rc4-md5",
+ "fast_open": false
+}
+说明：  左边 为端口号     右边为密码    rc4-md5为加密方式 ，也可以设置为aes-256-cfb ，可以在ss pc版客户端查看不到的加密方式。
+然后在电脑版填入信息就可以使用了
+
+特殊情况
+如果出现不可以使用的情况
+
+关闭防火墙，再测试下
+
+iptables -F /请小心使用此招，服务器被黑了不要找我/
+
+开启服务
+ssserver -c /etc/shadowsocks.json -d start
+
+如不能使用，可以输入reboot重启vps,再输入上面命令开启ss服务
+
+查看进程和服务是否成功开启
+或者输入 ss -a 查看是否有端口进程
+
+输入top 查看python服务是否已开启

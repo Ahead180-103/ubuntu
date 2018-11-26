@@ -803,3 +803,149 @@ iptables -A INPUT ! -s 127.0.0.1/32 -p tcp -m tcp --dport 8080 --tcp-flags FIN,S
 iptables -A INPUT -p tcp -m tcp --dport 80 --tcp-flags FIN,SYN,RST,ACK SYN -m connlimit --connlimit-above 16 --connlimit-mask 32 --connlimit-saddr -j LOG --log-prefix "connlimit "
 
 iptables -A INPUT -p tcp -m tcp --dport 80 --tcp-flags FIN,SYN,RST,ACK SYN -m connlimit --connlimit-above 16 --connlimit-mask 32 --connlimit-saddr -j REJECT --reject-with icmp-port-unreachable
+
+#######################################################################################
+2017-11-03 19:33:38
+Limit match
+    这个匹配操作必须由-m limit明确指定才能使用。有了他的帮助，就能对指定的规则的日志数量加以限制，以免你被信息的洪流淹没哦。比如，你能事先设定一个限定值，当符合条件的包的数量不超过他时，就记录；超过了，就不记录了。我们能控制某条规则在一段时间内的匹配次数（也就是能匹配的包的数量），这样就能够减少DoS syn flood攻击的影响。这是他的主要作用，当然，更有非常多其他作用（注：比如，对于某些不常用的服务能限制连接数量，以免影响其他服务）。limit match也能用英文感叹号取反，如：-m limit ! --limit 5/s表示在数量超过限定值后，所有的包都会被匹配。
+    limit match的工作方式就像一个单位大门口的保安，当有人要进入时，需要找他办理通行证。早上上班时，保安手里有一定数量的通行证，来一个人，就签发一个，当通行证用完后，再来人就进不去了，但他们不会等，而是到别的地方去（在iptables里，这相当于一个包不符合某条规则，就会由后面的规则来处理，如果都不符合，就由缺省的策略处理）。但有个规定，每隔一段时间保安就要签发一个新的通行证。这样，后面来的人如果恰巧赶上，也就能进去了。如果没有人来，那通行证就保留下来，以备来的人用。如果一直没人来，可用的通行证的数量就增加了，但不是无限增大的，最多也就是刚开始时保安手里有的那个数量。也就是说，刚开始时，通行证的数量是有限的，但每隔一段时间就有新的通行证可用。limit match有两个参数就对应这种情况，--limit-burst指定刚开始时有多少通行证可用，--limit指定要隔多长时间才能签发一个新的通行证。要注意的是，我这里强调的是“签发一个新的通行证”，这是以iptables的角度考虑的。在你自己写规则时，就要从这个角度考虑。比如，你指定了--limit 3/minute --limit-burst 5 ，意思是开始时有5个通行证，用完之后每20秒增加一个（这就是从iptables的角度看的，要是以用户的角度看，说法就是每一分钟增加三个或每分钟只能过三个）。你要是想每20分钟过一个，只能写成--limit 3/hour --limit-burst 5，也就是说你要把时间单位凑成整的。
+
+Table 1?1. Limit match options
+Match
+--limit
+Example
+iptables -A INPUT -m limit --limit 3/hour
+Explanation
+为limit match设置最大平均匹配速率，也就是单位时间内limit match能匹配几个包。他的形式是个数值加一个时间单位，能是/second /minute /hour /day 。默认值是每小时3次（用户角度），即3/hour ，也就是每20分钟一次（iptables角度）。
+Match
+--limit-burst
+Example
+iptables -A INPUT -m limit --limit-burst 5
+Explanation
+这里定义的是limit match的峰值，就是在单位时间（这个时间由上面的--limit指定）内最多可匹配几个包（由此可见，--limit-burst的值要比--limit的大）。默认值是5。
+
+ 
+
+假设如下的规则：
+iptables -A INPUT -p icmp -m limit --limit 6/m --limit-burst 5 -j ACCEPT
+iptables -P INPUT DROP
+然后从另一部主机上ping这部主机，就会发生如下的现象：
+首先我们能看到前四个包的回应都非常正常，然后从第五个包开始，我们每10秒能收到一个正常的回应。这是因为我们设定了单位时间(在这里是每分钟)内允许通过的数据包的个数是每分钟6个，也即每10秒钟一个；其次我们又设定了事件触发阀值为5，所以我们的前四个包都是正常的，只是从第五个包开始，限制规则开始生效，故只能每10秒收到一个正常回应。
+假设我们停止ping，30秒后又开始ping，这时的现象是：
+前两个包是正常的，从第三个包开始丢包，这是因为在这里我的允许一个包通过的周期是10秒，如果在一个周期内系统没有收到符合条件的包，系统的触发值就会恢复1，所以如果我们30秒内没有符合条件的包通过，系统的触发值就会恢复到3，如果5个周期内都没有符合条件的包通过，系统都触发值就会完全恢复。
+
+
+
+iptables --limit --limit-burst 使用研究
+
+1、限制特定包传入速度
+
+2、限制特定端口传入频率
+
+3、使用--limit限制ping的一个例子
+
+4、用户自定义使用链
+
+5、防范SYN-Flood碎片攻击
+
+1、限制特定包传入速度
+
+参数 -m limit --limit 
+
+范例 iptables -A INPUT -m limit --limit 3/hour 
+
+说明 用来比对某段时间内封包的平均流量，上面的例子是用来比对：每小时平均流量是否超过一次 3 个封包。 除了每小时平均 
+
+次外，也可以每秒钟、每分钟或每天平均一次，默认值为每小时平均一次，参数如后： /second、 /minute、/day。 除了进行封 
+
+数量的比对外，设定这个参数也会在条件达成时，暂停封包的比对动作，以避免因骇客使用洪水攻击法，导致服务被阻断。
+
+2、限制特定包瞬间传入的峰值
+
+参数 --limit-burst 
+
+范例 iptables -A INPUT -m limit --limit-burst 5 
+
+说明 用来比对瞬间大量封包的数量，上面的例子是用来比对一次同时涌入的封包是否超过 5 个（这是默认值），超过此上限的封 
+
+将被直接丢弃。使用效果同上。
+
+3、使用--limit限制ping的一个例子
+
+限制同时响应的 ping (echo-request) 的连接数
+
+限制每分只接受一個 icmp echo-request 封包（注意：当已接受1个icmp echo-request 封包后，
+
+iptables将重新统计接受之后的一秒内接受的icmp echo-request 封包的个数，此刻为0个，所以它会继续接受icmp echo-request包，
+
+出现的结果是你在1分钟时间内将看到很多
+
+Reply from 192.168.0.111: bytes=32 time<1ms TTL=64
+
+Reply from 192.168.0.111: bytes=32 time<1ms TTL=64
+
+Reply from 192.168.0.111: bytes=32 time<1ms TTL=64
+
+Reply from 192.168.0.111: bytes=32 time<1ms TTL=64
+
+Reply from 192.168.0.111: bytes=32 time<1ms TTL=64
+
+Reply from 192.168.0.111: bytes=32 time<1ms TTL=64
+
+Reply from 192.168.0.111: bytes=32 time<1ms TTL=64
+
+Reply from 192.168.0.111: bytes=32 time<1ms TTL=64
+
+响应结果，若你同时开好几个ping窗口，你会发现任一时刻只有一个会有响应//--limit 1/m 所限制）
+
+#iptables -A INPUT -p icmp --icmp-type echo-request -m limit --limit 1/m --limit-burst 1 -j ACCEPT
+
+#iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
+
+--limit 1/s 表示每秒一次; 1/m 则为每分钟一次
+
+--limit-burst 表示允许触发 limit 限制的最大次数 (预设 5)
+
+4、用户自定义使用链
+
+上面例子的另一种实现方法：
+
+#iptables -N pinglimit
+
+#iptables -A pinglimit -m limit --limit 1/m --limit-burst 1 -j ACCEPT
+
+#iptables -A pinglimit -j DROP
+
+#iptables -A INPUT -p icmp --icmp-type echo-request -j pinglimit
+
+5、防范 SYN-Flood 碎片攻击
+
+#iptables -N syn-flood
+
+#iptables -A syn-flood -m limit --limit 100/s --limit-burst 150 -j RETURN
+
+#iptables -A syn-flood -j DROP
+
+#iptables -I INPUT -j syn-flood 
+
+
+
+
+关于iptables的基本介绍能参见：
+Linux iptables 应用手册（－）：
+http://fanqiang.chinaunix.net/system/linux/2006-06-20/4595.shtml
+Linux iptables 应用手册（二）：
+http://fanqiang.chinaunix.net/system/linux/2006-06-20/4596.shtml
+Linux iptables 应用手册（三）：
+http://fanqiang.chinaunix.net/system/linux/2006-06-20/4597.shtml
+Linux iptables 应用手册（四）：
+http://fanqiang.chinaunix.net/system/linux/2006-06-20/4598.shtml
+Linux iptables 应用手册（五）：
+http://fanqiang.chinaunix.net/system/linux/2006-06-20/4599.shtml
+Linux iptables 应用手册（六）：
+http://fanqiang.chinaunix.net/system/linux/2006-06-20/4600.shtml
+
+关于iptables拓展功能.例如:comment (备注匹配) ,string(字符串匹配,能用做内容过滤),iprang(ip范围匹配),time(时间匹配),ipp2p(点对点匹配),connlimit(同时连接个数匹配),Nth(第n个包匹配),geoip(根据国家地区匹配). ipp2p(点对点匹配), quota(配额匹配)等等，参见：
+
+
+http://bbs.chinaunix.net/viewthread.php?tid=525493

@@ -1,0 +1,20 @@
+https://zhinan.sogou.com/guide/detail/?id=316512760051   #参考网页
+
+计算机》管理》存储》磁盘管理》 可以看到你想看到的磁盘
+
+然后用命令清理格式化U盘，命令如下
+cmd
+
+diskpart
+
+list disk   #查看你的U盘是那个
+
+select disk 1   #从上个命令看出U盘是1  ，这个命令是进入U盘
+
+clean  # 清理
+
+create partition primary  #创建主分区
+
+format fs=fat32   #格式化，格式为FAT32
+
+exit  #退出

@@ -1,0 +1,88 @@
+mysql 导出表结构和表数据 mysqldump用法
+命令行下具体用法如下： 
+
+mysqldump -u用戶名 -p密码 -d 数据库名 表名 > 脚本名;
+
+  
+
+导出整个数据库结构和数据
+mysqldump -h localhost -uroot -p123456 database > dump.sql
+
+ 
+
+导出单个数据表结构和数据
+mysqldump -h localhost -uroot -p123456  database table > dump.sql
+
+ 
+
+ 
+
+导出整个数据库结构（不包含数据）
+mysqldump -h localhost -uroot -p123456  -d database > dump.sql
+
+ 
+
+导出单个数据表结构（不包含数据）
+mysqldump -h localhost -uroot -p123456  -d database table > dump.sql
+
+
+mysql mysqldump只导出表结构或只导出数据的实现方法
+2015年11月19日 16:58:23 henry_wu001 阅读数：6075
+refs:
+
+http://www.jb51.net/article/28855.htm
+
+http://www.blogjava.net/fisher/articles/90455.html
+
+
+
+可以在mysql的命令行下或在php程序中执行它。我下面以在mysql命令行下为例。在php中使用时，将其改成相应的查询进行处理即可。不过在使用这个命令时，要求用户拥有file的权限。如我们有一个库为phptest，其中有一个表为driver。现在要把driver卸成文件。执行命令：
+
+　　mysql> use phptest;
+　　Database Changed
+　　mysql> select * from driver into outfile "a.txt";
+　　Query OK, 22 rows affected (0.05 sec)
+
+//=============================================================================
+
+
+
+mysql mysqldump 只导出表结构 不导出数据
+
+复制代码 代码如下:
+
+mysqldump --opt -d 数据库名 -u root -p > xxx.sql 
+
+备份数据库 
+复制代码 代码如下:
+
+#mysqldump　数据库名　>数据库备份名 
+#mysqldump　-A　-u用户名　-p密码　数据库名>数据库备份名 
+#mysqldump　-d　-A　--add-drop-table　-uroot　-p　>xxx.sql 
+
+1.导出结构不导出数据 
+复制代码 代码如下:
+
+mysqldump　--opt　-d　数据库名　-u　root　-p　>　xxx.sql　　 
+
+2.导出数据不导出结构 
+复制代码 代码如下:
+
+mysqldump　-t　数据库名　-uroot　-p　>　xxx.sql　 
+
+3.导出数据和表结构 
+复制代码 代码如下:
+
+mysqldump　数据库名　-uroot　-p　>　xxx.sql　 
+
+4.导出特定表的结构 
+复制代码 代码如下:
+
+mysqldump　-uroot　-p　-B　数据库名　--table　表名　>　xxx.sql　　 
+
+导入数据： 
+　　由于mysqldump导出的是完整的SQL语句，所以用mysql客户程序很容易就能把数据导入了： 
+复制代码 代码如下:
+
+#mysql　数据库名　<　文件名 
+#source　/tmp/xxx.sql

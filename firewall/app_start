@@ -1,0 +1,23 @@
+#!/bin/bash
+#  
+#chkconfig: 2345 80 90  
+#description: auto app service
+
+
+app_start() {
+  /data/startup.sh
+}
+
+case $1 in
+start)
+   app_start;;
+stop)
+  echo "不能使用stop"
+  exit;;
+restart)
+  echo "不能使用restart"
+  app_start
+  exit;;
+*)
+   echo "只能使用start";;
+esac

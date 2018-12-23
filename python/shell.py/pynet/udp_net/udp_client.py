@@ -18,16 +18,17 @@ print('server port',SERVER_ADDR)
 
 #创建套接字
 s = socket(AF_INET,SOCK_DGRAM)
-
-#SEND and RECEIVE
-data = input('消息:')
-
-#给服务器发送
-s.sendto(data.encode(),SERVER_ADDR)
-
-#收到服务器的消息
-data,addr = s.recvfrom(1024)
-print("从服务器收到:",data.decode())
+while True:
+    #SEND and RECEIVE
+    data = input('消息:')
+    if not data:
+        break  
+    #给服务器发送
+    s.sendto(data.encode(),SERVER_ADDR)
+    
+    #收到服务器的消息
+    data,addr = s.recvfrom(1024)
+    print("从服务器收到:",data.decode())
 
 #关闭
 s.close()

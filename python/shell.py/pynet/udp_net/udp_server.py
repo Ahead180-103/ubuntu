@@ -14,11 +14,12 @@ s = socket(AF_INET,SOCK_DGRAM)
 #绑定IP and PORT
 s.bind(ADDR)
 
-#RECV and SEND message
-data,addr = s.recvfrom(1024)
-print('receive from %s:%s' % (addr,data.decode()))
-
-s.sendto("收到你的消息".encode(),addr)
+while True:
+    #RECV and SEND message
+    data,addr = s.recvfrom(1024)
+    print('receive from %s:%s' % (addr,data.decode()))
+    
+    s.sendto("收到你的消息".encode(),addr)
 
 
 #关闭

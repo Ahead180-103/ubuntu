@@ -1,0 +1,950 @@
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61022)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61022)>
+GET / HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61023)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61023)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/swfobject_0178953.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61026)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61026)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/soutu.css HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61027)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61027)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/jquery-1.10.2.min_65682a2.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61028)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61028)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/dong_6b43e987ca87c26dd0ad5fc0ebffb871.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61029)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61029)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/tu_d03f361.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61030)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61030)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/baidu_jgylogo3.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61037)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61037)>
+GET / HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61038)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61038)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/all_async_search_8936f95.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61044)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61044)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/dong_6b43e987ca87c26dd0ad5fc0ebffb871.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61043)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61043)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/soutu.css HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61046)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61046)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/baidu_jgylogo3.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61045)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61045)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/swfobject_0178953.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61047)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61047)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/tu_d03f361.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61064)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61064)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/jquery-1.10.2.min_65682a2.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61067)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61067)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/dong_6b43e987ca87c26dd0ad5fc0ebffb871.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61072)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61072)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/baidu_jgylogo3.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61073)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61073)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/all_async_search_8936f95.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61078)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61078)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/dong_6b43e987ca87c26dd0ad5fc0ebffb871.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61079)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61079)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/baidu_jgylogo3.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61103)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61103)>
+GET /favicon.ico HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61110)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61110)>
+GET / HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61116)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61116)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/soutu.css HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61117)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61117)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/swfobject_0178953.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61113)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61113)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/tu_d03f361.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61115)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61115)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/jquery-1.10.2.min_65682a2.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61114)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61114)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/dong_6b43e987ca87c26dd0ad5fc0ebffb871.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61130)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61130)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/baidu_jgylogo3.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61219)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61219)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/all_async_search_8936f95.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61218)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61218)>
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61255)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61255)>
+GET / HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61257)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61257)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/soutu.css HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61258)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61258)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/jquery-1.10.2.min_65682a2.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61259)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61259)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/swfobject_0178953.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61263)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61263)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/tu_d03f361.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61262)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61262)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/dong_6b43e987ca87c26dd0ad5fc0ebffb871.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61267)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61267)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/all_async_search_8936f95.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61264)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61264)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/baidu_jgylogo3.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61288)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61288)>
+GET / HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61334)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61334)>
+GET / HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61340)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61340)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/soutu.css HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61341)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61341)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/jquery-1.10.2.min_65682a2.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61342)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61342)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/swfobject_0178953.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61339)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61339)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/tu_d03f361.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61343)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61343)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/dong_6b43e987ca87c26dd0ad5fc0ebffb871.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61354)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61354)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/all_async_search_8936f95.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61359)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61359)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/baidu_jgylogo3.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61368)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61368)>
+GET /favicon.ico HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61396)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61396)>
+GET /favicon.ico HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61474)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61474)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/dong_6b43e987ca87c26dd0ad5fc0ebffb871.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61473)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61473)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/baidu_jgylogo3.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61480)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61480)>
+GET /favicon.ico HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61509)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61509)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/dong_6b43e987ca87c26dd0ad5fc0ebffb871.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61510)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61510)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/baidu_jgylogo3.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61513)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61513)>
+GET /favicon.ico HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('85.105.91.122', 39402)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('85.105.91.122', 39402)>
+GET / HTTP/1.0
+HOST: 1.2.3.4
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61684)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61684)>
+GET / HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61685)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61685)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/swfobject_0178953.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61689)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61689)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/soutu.css HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61690)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61690)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/jquery-1.10.2.min_65682a2.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61691)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61691)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/tu_d03f361.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61692)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61692)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/dong_6b43e987ca87c26dd0ad5fc0ebffb871.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61697)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61697)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/baidu_jgylogo3.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61700)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61700)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/all_async_search_8936f95.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61721)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61721)>
+GET / HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61723)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61723)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/soutu.css HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61726)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61726)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/swfobject_0178953.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61727)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61727)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/tu_d03f361.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61725)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61725)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/dong_6b43e987ca87c26dd0ad5fc0ebffb871.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61724)
+<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61724)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/jquery-1.10.2.min_65682a2.js.%E6%B6%93%E5%AC%AD%E6%B5%87 HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: */*
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61730)
+<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.20.29.178', 9000), raddr=('202.105.107.18', 61730)>
+GET /%E9%90%A7%E6%83%A7%E5%AE%B3%E6%B6%93%E2%82%AC%E6%B6%93%E5%AC%B6%E7%B4%9D%E6%B5%A3%E7%8A%B2%E6%B0%A8%E9%90%AD%E3%83%A9%E4%BA%BE_files/baidu_jgylogo3.gif HTTP/1.1
+Host: www.svnup.cn:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://www.svnup.cn:9000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+listen port 9000
+waiting client connection from: ('202.105.107.18', 61733)

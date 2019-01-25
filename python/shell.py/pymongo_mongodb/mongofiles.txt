@@ -1,0 +1,6 @@
+#用put向数据库中放大文件
+mongofiles  -uroot -ppassword --authenticationDatabase=admin  -d databasename  put file_path
+
+
+#用get从数据库获取大文件
+mongofiles  -uroot -ppassword --authenticationDatabase=admin  -d databasename  get file_path

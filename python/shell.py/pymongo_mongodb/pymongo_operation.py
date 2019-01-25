@@ -4,7 +4,8 @@
 import pymongo
 
 #创建连接
-conn = pymongo.MongoClient('/tmp/mongodb-27017.sock')
+#conn = pymongo.MongoClient('/tmp/mongodb-27017.sock')
+conn = pymongo.MongoClient('127.0.0.1',27017)
 
 #进入数据库
 db = conn.gyahead
@@ -19,7 +20,12 @@ myset = db.test
 message = {'name':'gyy','age':30,'see':'Yolanda'}
 print(message)
 myset.insert(message)
-myset.remove({'see':'Yolanda'})
+
+num = myset.count()
+if num > 3:
+    myset.remove({'see':'Yolanda'},False)
+else:
+    print(myset.count()) 
 
 a = myset.find()
 for i in a:
